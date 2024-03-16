@@ -28,7 +28,7 @@ export default function App() {
 
             setResponseInProgress(true);
 
-            const modelResponse = await axios.get(`http://127.0.0.1:5000/respond?question=${question}`, {
+            const modelResponse = await axios.get(`https://holm-backend.onrender.com/respond?question=${question}`, {
                 timeout: 50000
             });
 
